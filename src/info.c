@@ -90,10 +90,10 @@ double TotalInfo(double V[], DiscrValue MinVal, DiscrValue MaxVal)
 
     ForEach(v, MinVal, MaxVal)
     {
-	N = V[v];
+	N = V[v]+1;
 
 	Sum += N * Log(N);
-	TotalCases += N;
+	TotalCases += N + s;
     }
 
     return TotalCases * Log(TotalCases) - Sum;
